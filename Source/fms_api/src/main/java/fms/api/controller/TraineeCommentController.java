@@ -8,15 +8,16 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import fms.api.entity.Trainee_Comment;
 import fms.api.exception.ResourceNotFoundException;
-import fms.api.repository.Trainee_Comment;
+import fms.api.repository.Trainee_CommentRepository;
 
 @RestController
 @RequestMapping("/api/comments")
 public class TraineeCommentController {
 
 	@Autowired
-	Trainee_Comment repository;
+	Trainee_CommentRepository repository;
 	
 	@GetMapping("/getAll")
 	public List<Trainee_Comment> getAllComment() throws ResourceNotFoundException{
@@ -34,21 +35,21 @@ public class TraineeCommentController {
 	}
 	
 	@GetMapping("/getCommentsByClassID/{classID}")
-	public List<Trainee_Comment> getCommentsByClassID(
+	public List<Trainee_CommentRepository> getCommentsByClassID(
 			@PathVariable(value = "classID") int classID) 
 					throws ResourceNotFoundException{
 		return repository.findTraineeCommentByClassID(classID);
 	}
 	
 	@GetMapping("/getCommentsByModuleID/{moduleID}")
-	public List<Trainee_Comment> getCommentsByModuleID(
+	public List<Trainee_CommentRepository> getCommentsByModuleID(
 			@PathVariable(value = "moduleID") int moduleID) 
 					throws ResourceNotFoundException{
 		return repository.findTraineeCommentByModuleID(moduleID);
 	}
 	
 	@GetMapping("/getCommentsByTraineeID/{traineeID}")
-	public List<Trainee_Comment> getCommentsByTraineeID(
+	public List<Trainee_CommentRepository> getCommentsByTraineeID(
 			@PathVariable(value = "traineeID") String traineeID) 
 					throws ResourceNotFoundException{
 		return repository.findTraineeCommentByTraineeID(traineeID);

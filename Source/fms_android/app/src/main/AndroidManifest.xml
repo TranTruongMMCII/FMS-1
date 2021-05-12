@@ -12,10 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity.AssignmentEditActivity"></activity>
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login"></activity>
+        <activity android:name=".activity.AssignmentEditActivity" />
         <activity android:name=".activity.AssignmentActivity" />
         <activity android:name=".activity.UserActivity" />
-        <activity android:name=".activity.FeedbackOfTraineeActivity"></activity>
+        <activity android:name=".activity.FeedbackOfTraineeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

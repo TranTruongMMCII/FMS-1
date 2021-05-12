@@ -8,7 +8,7 @@ import com.example.fms_android.service.UserService;
 
 public class APIUtility {
 
-    private static String baseURL = "http://10.0.2.2:8080/";
+    private static final String baseURL = "http://10.0.2.2:8081/";
 
     public static UserService getUserService(){
         return APIClient.getClient(baseURL).create(UserService.class);

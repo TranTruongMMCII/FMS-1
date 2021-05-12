@@ -12,19 +12,19 @@ import fms.api.entity.*;
 @Repository
 public interface AnswerRepository extends JpaRepository<Answer, AnswerKey>{
 	@Query(nativeQuery = true, 
-			value = "select * from Answer a where a.ClassID =: classID")
+			value = "select * from Answer a where a.ClassID=:ClassID")
 	List<Answer> findAnswerByClassId(@Param ("ClassID") int classID);
 
 	@Query(nativeQuery = true, 
-			value = "select * from Answer a where a.ModuleID =: moduleID")
+			value = "select * from Answer a where a.ModuleID=:ModuleID")
 	List<Answer> findAnswerByModuleId(@Param ("ModuleID") int moduleID);
 
 	@Query(nativeQuery = true, 
-			value = "select * from Answer a where a.TraineeID =: traineeID")
+			value = "select * from Answer a where a.TraineeID=:TraineeID")
 	List<Answer> findAnswerByTraineeId(@Param ("TraineeID") String traineeID);
 
 	@Query(nativeQuery = true, 
-			value = "select * from Answer a where a.QuestionID =: questionID")
+			value = "select * from Answer a where a.QuestionID=:QuestionID")
 	List<Answer> findAnswerByQuestionId(@Param ("QuestionID") int questionID);
 	
 	List<Answer> findAnswerByValue(Integer integer);
