@@ -38,17 +38,16 @@
     <string name="empty_string"></string>
     <string name="feedback_statisics">Feedback Statistics</string>
     <string name="exit">Exit</string>
-    <string name="title_activity_login">LoginActivity</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
     <string name="log_in">Log In</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="remember_password">Remember Password</string>
     <string name="login">Login</string>
 
+    <string name="usernamenotempty">Username must have at least 1 character!</string>
+    <string name="passwordnotempty">Password must have at least 1 character!</string>
+    <string name="blankusername">Username must have not a blank space!</string>
+    <string name="wronglogin">Login failed, check your login details!</string>
     <string-array name="spinnerRole">
         <item>Admin</item>
         <item>Trainer</item>

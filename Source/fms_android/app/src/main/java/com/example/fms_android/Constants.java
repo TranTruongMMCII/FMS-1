@@ -6,4 +6,5 @@ public class Constants {
     public static Boolean IS_COMPLETED = false;
     public static String CLASS_ID = "";
     public static String MODULE_ID = "";
+    public static int rememberPassword = 30;
 }

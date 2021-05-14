@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FF5722">
@@ -12,7 +13,7 @@
         android:layout_marginTop="30dp"
         android:text="@string/log_in"
         android:textColor="#FFFFFF"
-        android:textSize="50sp"
+        android:textSize="70sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -25,14 +26,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/r2s" />
+        app:srcCompat="@drawable/r2s"
+        android:contentDescription="TODO" />
 
     <EditText
         android:id="@+id/txtUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="25dp"
         android:ems="10"
         android:hint="@string/username"
@@ -62,6 +64,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -75,6 +79,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:visibility="invisible"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,20 +109,21 @@
         android:id="@+id/chkRememberPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:text="@string/remember_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerRole" />
 
     <Button
-        android:id="@+id/btnSearchAssign"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:id="@+id/btnLogin"
+        android:layout_width="151dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/rounded_corner_pink_background"
         android:text="@string/login"
         android:textColor="@color/orange"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chkRememberPassword" />

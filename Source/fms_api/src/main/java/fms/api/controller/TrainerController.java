@@ -36,7 +36,7 @@ public class TrainerController {
 	public ResponseEntity<Trainer> getTrainerById(@PathVariable(value = "userName") String userName) throws ResourceNotFoundException{
 		Trainer trainer = 
 				trainerRepository
-				.findById(userName).orElseThrow(() -> new ResourceNotFoundException("User not found ::" + userName));
+				.findById(userName).orElseThrow(() -> new ResourceNotFoundException("Trainer not found ::" + userName));
 		return ResponseEntity.ok().body(trainer);
 	}
 	

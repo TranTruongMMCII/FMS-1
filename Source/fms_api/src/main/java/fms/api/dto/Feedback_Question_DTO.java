@@ -5,9 +5,6 @@ import org.springframework.lang.NonNull;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
-import fms.api.entity.Feedback;
-import fms.api.entity.Question;
-
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Feedback_Question_DTO {

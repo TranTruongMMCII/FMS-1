@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import fms.api.entity.Feedback;
 import fms.api.entity.TypeFeedback;
 import fms.api.repository.TypeFeedbackRepository;
 

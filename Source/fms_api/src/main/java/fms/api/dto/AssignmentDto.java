@@ -3,9 +3,6 @@ import org.springframework.lang.NonNull;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
-import fms.api.entity.Class;
-import fms.api.entity.Module;
-import fms.api.entity.Trainer;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class AssignmentDto {

@@ -86,7 +86,7 @@ public class Admin extends Auditable<String>{
 		Email = email;
 	}
 
-	public String isPassword() {
+	public String getPassword() {
 		return Password;
 	}
 
