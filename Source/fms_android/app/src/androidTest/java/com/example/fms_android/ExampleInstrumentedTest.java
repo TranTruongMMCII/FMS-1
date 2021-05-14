@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.feedback_management_system", appContext.getPackageName());
+        assertEquals("com.example.fms_android", appContext.getPackageName());
     }
 }

@@ -154,7 +154,7 @@ public class FeedbackOfTraineeActivity extends AppCompatActivity {
                             }
                         });
                     }
-                    AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
+                    Builder builder1 = new Builder(this);
                     builder1.setTitle(getString(R.string.announcement));
                     builder1.setMessage(getString(R.string.submit_successful));
                     builder1.setIcon(R.drawable.baseline_done_black_18dp);

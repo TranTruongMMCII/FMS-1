@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "Feedback_Management_System"
+rootProject.name = "fms_android"
