@@ -2,103 +2,94 @@ package com.example.fms_android.model;
 
 import java.util.Date;
 
-public class    Module {
-    private long ModuleID;
-    private String admin_module;
-    private String ModuleName;
-    private Date StartTime;
-    private Date EndTime;
-    private boolean IsDeleted;
-    private Date FeedbackStartTime;
-    private Date FeedbackEndTime;
-    private Long feedback_module;
+public class Module {
+    int moduleID, feedbackID;
+    String adminID, moduleName;
+    Date startTime, endTime, feedbackStartTime, feedbackEndTime;
+    boolean isDeleted;
 
-    public long getModuleID() {
-        return ModuleID;
+    public Module(int moduleID, int feedbackID, String adminID, String moduleName, Date startTime,
+                  Date endTime, Date feedbackStartTime, Date feedbackEndTime, boolean isDeleted) {
+        this.moduleID = moduleID;
+        this.feedbackID = feedbackID;
+        this.adminID = adminID;
+        this.moduleName = moduleName;
+        this.startTime = startTime;
+        this.endTime = endTime;
+        this.feedbackStartTime = feedbackStartTime;
+        this.feedbackEndTime = feedbackEndTime;
+        this.isDeleted = isDeleted;
     }
 
-    public void setModuleID(long moduleID) {
-        ModuleID = moduleID;
+    public int getModuleID() {
+        return moduleID;
     }
 
-    public String getAdmin_module() {
-        return admin_module;
+    public void setModuleID(int moduleID) {
+        this.moduleID = moduleID;
     }
 
-    public void setAdmin_module(String admin_module) {
-        this.admin_module = admin_module;
+    public int getFeedbackID() {
+        return feedbackID;
+    }
+
+    public void setFeedbackID(int feedbackID) {
+        this.feedbackID = feedbackID;
+    }
+
+    public String getAdminID() {
+        return adminID;
+    }
+
+    public void setAdminID(String adminID) {
+        this.adminID = adminID;
     }
 
     public String getModuleName() {
-        return ModuleName;
+        return moduleName;
     }
 
     public void setModuleName(String moduleName) {
-        ModuleName = moduleName;
+        this.moduleName = moduleName;
     }
 
     public Date getStartTime() {
-        return StartTime;
+        return startTime;
     }
 
     public void setStartTime(Date startTime) {
-        StartTime = startTime;
+        this.startTime = startTime;
     }
 
     public Date getEndTime() {
-        return EndTime;
+        return endTime;
     }
 
     public void setEndTime(Date endTime) {
-        EndTime = endTime;
-    }
-
-    public boolean isDeleted() {
-        return IsDeleted;
-    }
-
-    public void setDeleted(boolean deleted) {
-        IsDeleted = deleted;
+        this.endTime = endTime;
     }
 
     public Date getFeedbackStartTime() {
-        return FeedbackStartTime;
+        return feedbackStartTime;
     }
 
     public void setFeedbackStartTime(Date feedbackStartTime) {
-        FeedbackStartTime = feedbackStartTime;
+        this.feedbackStartTime = feedbackStartTime;
     }
 
     public Date getFeedbackEndTime() {
-        return FeedbackEndTime;
+        return feedbackEndTime;
     }
 
     public void setFeedbackEndTime(Date feedbackEndTime) {
-        FeedbackEndTime = feedbackEndTime;
+        this.feedbackEndTime = feedbackEndTime;
     }
 
-    public Long getFeedback_module() {
-        return feedback_module;
+    public boolean isDeleted() {
+        return isDeleted;
     }
 
-    public void setFeedback_module(Long feedback_module) {
-        this.feedback_module = feedback_module;
-    }
-
-    public Module() {
-    }
-
-    public Module(long moduleID, String admin_module, String moduleName,
-                  Date startTime, Date endTime, boolean isDeleted,
-                  Date feedbackStartTime, Date feedbackEndTime, Long feedback_module) {
-        ModuleID = moduleID;
-        this.admin_module = admin_module;
-        ModuleName = moduleName;
-        StartTime = startTime;
-        EndTime = endTime;
-        IsDeleted = isDeleted;
-        FeedbackStartTime = feedbackStartTime;
-        FeedbackEndTime = feedbackEndTime;
-        this.feedback_module = feedback_module;
+    public void setDeleted(boolean deleted) {
+        isDeleted = deleted;
     }
 }

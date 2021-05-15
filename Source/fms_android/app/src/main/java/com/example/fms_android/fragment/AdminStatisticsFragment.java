@@ -20,7 +20,7 @@ import androidx.lifecycle.ViewModelProviders;
 import com.example.fms_android.R;
 import com.example.fms_android.model.Answer;
 import com.example.fms_android.model.ClassOfTruong;
-import com.example.fms_android.model.ModuleOfTruong;
+import com.example.fms_android.model.Module;
 import com.example.fms_android.viewmodel.AdminStatisticsViewModel;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Description;
@@ -76,13 +76,13 @@ public class AdminStatisticsFragment extends DialogFragment {
         classOfTruongs.add(new ClassOfTruong(5, 10, "Class 05", new Date(2021, 0, 1), new Date(2021, 1, 1), false));
         classOfTruongs.add(new ClassOfTruong(6, 10, "Class 06", new Date(2021, 0, 1), new Date(2021, 1, 1), false));
 
-        ArrayList<ModuleOfTruong> moduleOfTruongs = new ArrayList<>();
-        moduleOfTruongs.add(new ModuleOfTruong(1, 1, "abc", "Module 1", new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), false));
-        moduleOfTruongs.add(new ModuleOfTruong(2, 1, "abc", "Module 2", new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), false));
-        moduleOfTruongs.add(new ModuleOfTruong(3, 2, "abc", "Module 3", new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), false));
-        moduleOfTruongs.add(new ModuleOfTruong(4, 2, "abc", "Module 4", new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), false));
-        moduleOfTruongs.add(new ModuleOfTruong(5, 3, "abc", "Module 5", new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), false));
-        moduleOfTruongs.add(new ModuleOfTruong(6, 4, "abc", "Module 6", new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), false));
+        ArrayList<Module> modules = new ArrayList<>();
+        modules.add(new Module(1, 1, "abc", "Module 1", new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), false));
+        modules.add(new Module(2, 1, "abc", "Module 2", new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), false));
+        modules.add(new Module(3, 2, "abc", "Module 3", new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), false));
+        modules.add(new Module(4, 2, "abc", "Module 4", new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), false));
+        modules.add(new Module(5, 3, "abc", "Module 5", new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), false));
+        modules.add(new Module(6, 4, "abc", "Module 6", new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), new Date(2021, 0, 1), false));
 
         ArrayList<String> className = new ArrayList<>();
         className.add(getActivity().getString(R.string.choose_item));
@@ -96,7 +96,7 @@ public class AdminStatisticsFragment extends DialogFragment {
 
         ArrayList<String> moduleName = new ArrayList<>();
         moduleName.add(getActivity().getString(R.string.choose_item));
-        for (ModuleOfTruong var : moduleOfTruongs
+        for (Module var : modules
              ) {
             moduleName.add(var.getModuleName());
         }
@@ -151,10 +151,10 @@ public class AdminStatisticsFragment extends DialogFragment {
                             break;
                         }
                     }
-                    for (ModuleOfTruong moduleOfTruong:moduleOfTruongs
+                    for (Module module : modules
                          ) {
-                        if (moduleOfTruong.getModuleName().equals(moduleName)){
-                            moduleID = moduleOfTruong.getModuleID();
+                        if (module.getModuleName().equals(moduleName)){
+                            moduleID = module.getModuleID();
                             break;
                         }
                     }
@@ -222,10 +222,10 @@ public class AdminStatisticsFragment extends DialogFragment {
                             break;
                         }
                     }
-                    for (ModuleOfTruong moduleOfTruong:moduleOfTruongs
+                    for (Module module : modules
                     ) {
-                        if (moduleOfTruong.getModuleName().equals(moduleName)){
-                            moduleID = moduleOfTruong.getModuleID();
+                        if (module.getModuleName().equals(moduleName)){
+                            moduleID = module.getModuleID();
                             break;
                         }
                     }

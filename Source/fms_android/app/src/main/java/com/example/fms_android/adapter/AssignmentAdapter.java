@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.fms_android.R;
 import com.example.fms_android.model.Assignment;
-import com.example.fms_android.model.Module;
+import com.example.fms_android.draft.Module;
 
 import java.util.ArrayList;
 
