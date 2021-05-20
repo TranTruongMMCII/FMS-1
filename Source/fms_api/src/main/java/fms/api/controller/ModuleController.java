@@ -78,6 +78,4 @@ public class ModuleController {
 		respone.put("deleted", Boolean.TRUE);
 		return respone;
 	}
-
-
 }

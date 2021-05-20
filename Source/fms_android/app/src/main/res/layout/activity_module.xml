@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="20pt"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:text="@string/edit_module_list"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="0dp"
+            android:text="Module Name"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/txtModuleName"
+            android:layout_width="match_parent"
+            android:layout_height="20pt"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/rounded_corner_background_edit_text"
+            android:ems="10"
+            android:gravity="center|left"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="14sp" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="0dp"
+            android:text="Start Date"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="20pt"
+                android:layout_marginVertical="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_background_edit_text"
+                android:ems="10"
+                android:gravity="center|left"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/imgStartDate"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="20pt"
+                android:layout_marginVertical="5dp"
+                android:layout_toEndOf="@+id/txtStartDate"
+                android:src="@drawable/outline_calendar_today_black_24">
+            </ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtStartDateError"
+            android:layout_width="match_parent"
+            android:layout_height="14sp" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="0dp"
+            android:text="End Date"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="20pt"
+                android:layout_marginVertical="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_background_edit_text"
+                android:ems="10"
+                android:gravity="center|left"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/imgEndDate"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="20pt"
+                android:layout_marginVertical="5dp"
+                android:layout_toEndOf="@+id/txtStartDate"
+                android:src="@drawable/outline_calendar_today_black_24">
+            </ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtEndDateError"
+            android:layout_width="match_parent"
+            android:layout_height="14sp" />
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="0dp"
+            android:text="Admin ID"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/spinnerAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="20pt"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"></Spinner>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14sp" />
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="0dp"
+            android:text="Feedback Title"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/spinnerFeedbackTitle"
+            android:layout_width="match_parent"
+            android:layout_height="20pt"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"></Spinner>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14sp" />
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="0dp"
+            android:text="Feedback Start Date"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtFeedbackStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="20pt"
+                android:layout_marginVertical="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_background_edit_text"
+                android:ems="10"
+                android:gravity="center|left"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/imgFeedbackStartDate"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="20pt"
+                android:layout_marginVertical="5dp"
+                android:layout_toEndOf="@+id/txtStartDate"
+                android:src="@drawable/outline_calendar_today_black_24">
+            </ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtFeedbackStartDateError"
+            android:layout_width="match_parent"
+            android:layout_height="14sp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="0dp"
+            android:text="Feedback End Date"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtFeedbackEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="20pt"
+                android:layout_marginVertical="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_background_edit_text"
+                android:ems="10"
+                android:gravity="center|left"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/imgFeedbackEndDate"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="20pt"
+                android:layout_marginVertical="5dp"
+                android:layout_toEndOf="@+id/txtStartDate"
+                android:src="@drawable/outline_calendar_today_black_24">
+            </ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtFeedbackEndDateError"
+            android:layout_width="match_parent"
+            android:layout_height="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></Space>
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/rounded_corner_red_background"
+                android:text="save">
+            </Button>
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/rounded_corner_red_background"
+                android:text="Cancel"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

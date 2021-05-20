@@ -139,7 +139,7 @@
     </RelativeLayout>
 
     <ImageView
-        android:id="@+id/ivEditAssign"
+        android:id="@+id/imgEdit"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_alignParentTop="true"
@@ -154,7 +154,7 @@
         app:tint="@color/white" />
 
     <ImageView
-        android:id="@+id/ivDeleteAssign"
+        android:id="@+id/imgDelete"
         android:layout_width="35dp"
         android:layout_height="35dp"
 

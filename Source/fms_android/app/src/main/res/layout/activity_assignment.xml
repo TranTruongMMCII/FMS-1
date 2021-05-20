@@ -110,7 +110,5 @@
                 android:background="@drawable/rounded_corner_red_background"
                 android:ems="5" />
         </LinearLayout>
-
-
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

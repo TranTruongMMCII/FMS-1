@@ -28,6 +28,8 @@
         <activity android:name=".activity.UserActivity"/>
 
         <activity android:name=".activity.FeedbackOfTraineeActivity"/>
+
+        <activity android:name=".activity.ModuleActivity"/>
     </application>
 
 </manifest>

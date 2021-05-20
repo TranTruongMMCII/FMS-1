@@ -79,4 +79,7 @@
     <string name="feedback_starttime">Feedback StartTime: </string>
     <string name="feedback_endtime">Feedback EndTime: </string>
     <string name="nav_module">Module</string>
+    <string name="edit_module_list">Edit Module List</string>
+    <string name="add_module_list">Add Module List</string>
+
 </resources>

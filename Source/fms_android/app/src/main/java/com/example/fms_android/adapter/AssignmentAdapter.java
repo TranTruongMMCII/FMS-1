@@ -69,8 +69,8 @@ public class AssignmentAdapter extends RecyclerView.Adapter<AssignmentAdapter.My
             tvClassName = itemView.findViewById(R.id.tvClassName);
             tvTrainerName = itemView.findViewById(R.id.tvTrainerName);
             tvCode = itemView.findViewById(R.id.tvCode);
-            ivDeleteAssign = itemView.findViewById(R.id.ivDeleteAssign);
-            ivEditAssign = itemView.findViewById(R.id.ivEditAssign);
-        }
+            ivDeleteAssign = itemView.findViewById(R.id.imgDelete);
+            ivEditAssign = itemView.findViewById(R.id.imgEdit);
+         }
     }
 }

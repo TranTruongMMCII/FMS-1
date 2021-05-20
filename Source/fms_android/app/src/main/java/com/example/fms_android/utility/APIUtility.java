@@ -4,6 +4,7 @@ import com.example.fms_android.api.APIClient;
 import com.example.fms_android.service.AdminService;
 import com.example.fms_android.service.AnswerService;
 import com.example.fms_android.service.AssignmentService;
+import com.example.fms_android.service.ModuleService;
 import com.example.fms_android.service.QuestionService;
 import com.example.fms_android.service.TraineeService;
 import com.example.fms_android.service.TrainerService;
@@ -38,5 +39,9 @@ public class APIUtility {
 
     public static TraineeService getTraineeService(){
         return APIClient.getClient(baseURL).create(TraineeService.class);
+    }
+
+    public static ModuleService getModuleService(){
+        return APIClient.getClient(baseURL).create(ModuleService.class);
     }
 }
